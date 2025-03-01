@@ -10,18 +10,18 @@
 </head>
 
 <body class="bg-slate-100 m-5 max-w-screen-xl mx-auto pt-5 pb-2 max-h-screen">
-    <nav class="bg-white h-24 rounded-2xl p-5 flex justify-between align-middle items-center">
+    <nav class="bg-white h-20 rounded-2xl p-5 flex justify-between align-middle items-center">
         <div class="flex gap-3 justify-center align-middle items-center">
-            <img class="w-11" src="images/logo.png" alt="logo" />
-            <p class="text-2xl">Dev<b>Board</b></p>
+            <img class="w-8" src="images/logo.png" alt="logo" />
+            <p class="text-xl">Dev<b>Board</b></p>
         </div>
         <div class="flex gap-5 justify-center align-middle items-center">
             <div class="bg-slate-100 py-3 px-5 rounded-full flex gap-4 justify-center align-middle items-center">
-                <img class="w-8" src="images/checkbox.png" alt="icon" />
-                <p id="task-score" class="text-xl font-bold">23</p>
+                <img class="w-6" src="images/checkbox.png" alt="icon" />
+                <p id="task-score" class="text-lg font-bold">23</p>
             </div>
             <div>
-                <img id="theme-btn" class="h-14" src="images/theme-btn.png" alt="theme icon" />
+                <img id="theme-btn" class="h-10" src="images/theme-btn.png" alt="theme icon" />
             </div>
         </div>
     </nav>
@@ -34,8 +34,8 @@
                         <img class="w-6" src="images/checkbox.png" alt="icon" />
                     </div>
                     <div>
-                        <p class="text-lg font-medium">Task Assigned</p>
-                        <p id="task-assigned" class="text-2xl font-bold">6</p>
+                        <p class="text-sm font-medium">Task Assigned</p>
+                        <p id="task-assigned" class="text-xl font-bold">6</p>
                     </div>
                 </div>
                 <div onclick="location.href='blogs.html'"
@@ -44,7 +44,7 @@
                         <img class="w-24" src="images/board.png" alt="icon" />
                     </div>
                     <div>
-                        <p style="color: #fff" class="text-xl font-semibold">
+                        <p style="color: #fff" class="text-base font-semibold">
                             Discover Something New Today!
                         </p>
                     </div>
@@ -55,8 +55,8 @@
                         <img class="w-6" src="images/calender.png" alt="icon" />
                     </div>
                     <div>
-                        <p id="day" class="text-lg font-medium">Friday</p>
-                        <p id="date" class="text-xl font-bold">Feb 28 2025</p>
+                        <p id="day" class="text-base font-medium">Friday</p>
+                        <p id="date" class="text-base font-normal">Feb 28 2025</p>
                     </div>
                 </div>
             </div>
@@ -66,21 +66,20 @@
                     <div class="bg-white w-fit rounded-md px-4 py-2 mb-5">
                         <p class="font-medium">Google</p>
                     </div>
-                    <p class="text-xl font-semibold">Fix Mobile Button Issue</p>
-                    <div class="bg-white w-fit rounded-md px-4 py-2 my-5">
-                        <p class="font-medium" style="color: #bdbdbd">
+                    <p class="text-lg font-semibold">Fix Mobile Button Issue</p>
+                    <div class="bg-white w-fit rounded-md px-4 py-2 my-3">
+                        <p class="text-sm font-medium" style="color: #bdbdbd">
                             Debug button issues for mobile devices.
                         </p>
                     </div>
-                    <hr />
                     <div class="mt-5 flex justify-between align-middle items-center">
                         <div>
                             <p class="text-sm">Deadline</p>
-                            <p class="font-semibold">28 March, 2025</p>
+                            <p class="font-semibold text-sm">28 March, 2025</p>
                         </div>
                         <div>
                             <button onclick="updateBoard(this)" style="color: #fff"
-                                class="bg-blue-600 px-4 py-2 rounded-lg cursor-pointer disabled:opacity-60 disabled:cursor-default transition-all duration-300">
+                                class="bg-[#6c5ce7] text-sm px-4 py-2 rounded-lg cursor-pointer disabled:opacity-97 disabled:cursor-default transition-all duration-300">
                                 Completed
                             </button>
                         </div>
@@ -90,21 +89,20 @@
                     <div class="bg-white w-fit rounded-md px-4 py-2 mb-5">
                         <p class="font-medium">ByteDance</p>
                     </div>
-                    <p class="text-xl font-semibold">Integrate AI Sreach</p>
-                    <div class="bg-white w-fit rounded-md px-4 py-2 my-5">
-                        <p class="font-medium" style="color: #bdbdbd">
+                    <p class="text-lg font-semibold">Integrate AI Sreach</p>
+                    <div class="bg-white w-fit rounded-md px-4 py-2 my-3">
+                        <p class="text-sm font-medium" style="color: #bdbdbd">
                             Add an AI search to the website.
                         </p>
                     </div>
-                    <hr />
                     <div class="mt-5 flex justify-between align-middle items-center">
                         <div>
                             <p class="text-sm">Deadline</p>
-                            <p class="font-semibold">15 June, 2025</p>
+                            <p class="font-semibold text-sm">15 June, 2025</p>
                         </div>
                         <div>
                             <button onclick="updateBoard(this)" style="color: #fff"
-                                class="bg-blue-600 px-4 py-2 rounded-lg cursor-pointer disabled:opacity-60 disabled:cursor-default transition-all duration-300">
+                                class="bg-[#6c5ce7] text-sm px-4 py-2 rounded-lg cursor-pointer disabled:opacity-97 disabled:cursor-default transition-all duration-300">
                                 Completed
                             </button>
                         </div>
@@ -114,21 +112,20 @@
                     <div class="bg-white w-fit rounded-md px-4 py-2 mb-5">
                         <p class="font-medium">Meta</p>
                     </div>
-                    <p class="text-xl font-semibold">Add New Reaction 🤲</p>
-                    <div class="bg-white w-fit rounded-md px-4 py-2 my-5">
-                        <p class="font-medium" style="color: #bdbdbd">
+                    <p class="text-lg font-semibold">Add New Reaction 🤲</p>
+                    <div class="bg-white w-fit rounded-md px-4 py-2 my-3">
+                        <p class="text-sm font-medium" style="color: #bdbdbd">
                             Add dark theme all over the website.
                         </p>
                     </div>
-                    <hr />
                     <div class="mt-5 flex justify-between align-middle items-center">
                         <div>
                             <p class="text-sm">Deadline</p>
-                            <p class="font-semibold">17 March, 2025</p>
+                            <p class="font-semibold text-sm">17 March, 2025</p>
                         </div>
                         <div>
                             <button onclick="updateBoard(this)" style="color: #fff"
-                                class="bg-blue-600 px-4 py-2 rounded-lg cursor-pointer disabled:opacity-60 disabled:cursor-default transition-all duration-300">
+                                class="bg-[#6c5ce7] text-sm px-4 py-2 rounded-lg cursor-pointer disabled:opacity-97 disabled:cursor-default transition-all duration-300">
                                 Completed
                             </button>
                         </div>
@@ -138,21 +135,20 @@
                     <div class="bg-white w-fit rounded-md px-4 py-2 mb-5">
                         <p class="font-medium">Anthropic</p>
                     </div>
-                    <p class="text-xl font-semibold">Integrate Claude</p>
-                    <div class="bg-white w-fit rounded-md px-4 py-2 my-5">
-                        <p class="font-medium" style="color: #bdbdbd">
+                    <p class="text-lg font-semibold">Integrate Claude</p>
+                    <div class="bg-white w-fit rounded-md px-4 py-2 my-3">
+                        <p class="text-sm font-medium" style="color: #bdbdbd">
                             Add Claude 3.7 Sonnet to the AI chat.
                         </p>
                     </div>
-                    <hr />
                     <div class="mt-5 flex justify-between align-middle items-center">
                         <div>
                             <p class="text-sm">Deadline</p>
-                            <p class="font-semibold">16 April, 2025</p>
+                            <p class="font-semibold text-sm">16 April, 2025</p>
                         </div>
                         <div>
                             <button onclick="updateBoard(this)" style="color: #fff"
-                                class="bg-blue-600 px-4 py-2 rounded-lg cursor-pointer disabled:opacity-60 disabled:cursor-default transition-all duration-300">
+                                class="bg-[#6c5ce7] text-sm px-4 py-2 rounded-lg cursor-pointer disabled:opacity-97 disabled:cursor-default transition-all duration-300">
                                 Completed
                             </button>
                         </div>
@@ -162,21 +158,20 @@
                     <div class="bg-white w-fit rounded-md px-4 py-2 mb-5">
                         <p class="font-medium">Snapchat</p>
                     </div>
-                    <p class="text-xl font-semibold">Fix Video Loading Issue</p>
-                    <div class="bg-white w-fit rounded-md px-4 py-2 my-5">
-                        <p class="font-medium" style="color: #bdbdbd">
+                    <p class="text-lg font-semibold">Fix Video Loading Issue</p>
+                    <div class="bg-white w-fit rounded-md px-4 py-2 my-3">
+                        <p class="text-sm font-medium" style="color: #bdbdbd">
                             Debug the video API loading time.
                         </p>
                     </div>
-                    <hr />
                     <div class="mt-5 flex justify-between align-middle items-center">
                         <div>
                             <p class="text-sm">Deadline</p>
-                            <p class="font-semibold">14 March, 2025</p>
+                            <p class="font-semibold text-sm">14 March, 2025</p>
                         </div>
                         <div>
                             <button onclick="updateBoard(this)" style="color: #fff"
-                                class="bg-blue-600 px-4 py-2 rounded-lg cursor-pointer disabled:opacity-60 disabled:cursor-default transition-all duration-300">
+                                class="bg-[#6c5ce7] text-sm px-4 py-2 rounded-lg cursor-pointer disabled:opacity-97 disabled:cursor-default transition-all duration-300">
                                 Completed
                             </button>
                         </div>
@@ -186,21 +181,20 @@
                     <div class="bg-white w-fit rounded-md px-4 py-2 mb-5">
                         <p class="font-medium">Microsoft</p>
                     </div>
-                    <p class="text-xl font-semibold">Add Dark Theme</p>
-                    <div class="bg-white w-fit rounded-md px-4 py-2 my-5">
-                        <p class="font-medium" style="color: #bdbdbd">
+                    <p class="text-lg font-semibold">Add Dark Theme</p>
+                    <div class="bg-white w-fit rounded-md px-4 py-2 my-3">
+                        <p class="text-sm font-medium" style="color: #bdbdbd">
                             Add dark theme all over the website.
                         </p>
                     </div>
-                    <hr />
                     <div class="mt-5 flex justify-between align-middle items-center">
                         <div>
                             <p class="text-sm">Deadline</p>
-                            <p class="font-semibold">21 March, 2025</p>
+                            <p class="font-semibold text-sm">21 March, 2025</p>
                         </div>
                         <div>
                             <button onclick="updateBoard(this)" style="color: #fff"
-                                class="bg-blue-600 px-4 py-2 rounded-lg cursor-pointer disabled:opacity-60 disabled:cursor-default transition-all duration-300">
+                                class="bg-[#6c5ce7] text-sm px-4 py-2 rounded-lg cursor-pointer disabled:opacity-97 disabled:cursor-default transition-all duration-300">
                                 Completed
                             </button>
                         </div>
@@ -212,14 +206,13 @@
             <div class="flex flex-col justify-center align-center items-center">
                 <div class="flex gap-3">
                     <img class="w-7" src="images/activity.png" alt="icon" />
-                    <p class="text-xl font-semibold">Activity Log</p>
+                    <p class="text-lg font-semibold">Activity Log</p>
                 </div>
                 <button id="clear-history" style="color: #fff"
-                    class="bg-blue-600 px-4 py-2 rounded-lg font-semibold my-5 cursor-pointer hover:bg-blue-700 transition-all duration-300">
+                    class="bg-[#6c5ce7] px-4 py-2 rounded-lg text-sm my-5 cursor-pointer hover:bg-[#d63031] transition-all duration-300">
                     Clear History
                 </button>
             </div>
-            <hr />
             <div class="m-5" id="activity-log"></div>
         </div>
     </section>

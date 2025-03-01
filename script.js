@@ -79,6 +79,7 @@ function displayDayOfWeek() {
       activityLog.prepend(newDiv);
     }
     button.disabled = true;
+     button.classList.add("bg-gray-200", "text-gray-500")
     checkIfAllTasksCompleted();
   }
   
