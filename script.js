@@ -72,14 +72,14 @@ function displayDayOfWeek() {
       .toString()
       .padStart(2, "0")} ${ampm}`;
     const newDiv = document.createElement("div");
-    newDiv.textContent = `${taskTitle} - Completed at: ${timeString}`;
+    newDiv.textContent = `You have completed the task ${taskTitle} at ${timeString}`;
     newDiv.classList.add("p-5", "bg-slate-100", "rounded-lg", "mb-2");
     const activityLog = document.getElementById("activity-log");
     if (activityLog) {
       activityLog.prepend(newDiv);
     }
     button.disabled = true;
-     button.classList.add("bg-gray-200", "text-gray-500")
+    button.classList.add("bg-gray-200", "text-gray-500")
     checkIfAllTasksCompleted();
   }
   
