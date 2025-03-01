@@ -59,7 +59,7 @@ function displayDayOfWeek() {
     }
     const taskTitle =
       button.parentElement.parentElement.parentElement.querySelector(
-        "p.text-xl.font-semibold"
+        "p.text-lg.font-semibold"
       ).innerText;
     const now = new Date();
     let hours = now.getHours();
