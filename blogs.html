@@ -1,89 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>DevBoard</title>
-    <link rel="stylesheet" href="style.css" />
-    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
-  </head>
-  <body class="bg-slate-100 m-5 max-w-screen-xl mx-auto pt-5 pb-2 max-h-screen">
-    <nav
-      class="bg-white h-20 rounded-2xl p-5 flex justify-between align-middle items-center"
-    >
-      <div class="flex gap-3 justify-center align-middle items-center">
-        <img class="w-8" src="images/logo.png" alt="logo" />
-        <p class="text-lg">Dev<b>Board</b></p>
-      </div>
-      <div class="flex gap-5 justify-center align-middle items-center">
-        <button
-          style="color: #fff"
-          class="bg-[#6c5ce7] text-sm px-4 py-2 rounded-lg cursor-pointer transition-all duration-300"
-          onclick="location.href='index.html'"
-        >
-          Back To Desk
-        </button>
-      </div>
-    </nav>
-    <section>
-      <h1 class="text-3xl text-center font-bold m-5">Blogs</h1>
-      <div class="bg-white rounded-xl mt-5">
-        <p class="font-semibold p-5">
-          Question-1: What are the different ways to select an element in the
-          DOM?
-        </p>
-        <hr />
-        <p class="p-5">
-          There are various ways to select an element in the DOM, which are Id, Class name, Tag name, Name attribute, Css selector, and Traversing the Dom.
-          <br /><br />
-          Here are various methods available for selecting elements: <br />
-          By Id using getElementById(), by class name using getElementsByClassName(), by tag name using getElementsByTagName(), by name attribute using getElementsByName(), by css selector using querySelector() and querySelectorAll(), and lastly traversing the DOM using properties like children, firstElementChild, nextElementSibling.
-        </p>
-      </div>
-      <div class="bg-white rounded-xl mt-5">
-        <p class="font-semibold p-5">
-          Question-2: What is the difference between innerHTML, innerText, and
-          textContent ?
-        </p>
-        <hr />
-        <p class="p-5">
-          For innerHTML sets the HTML content inside an element, including tags. Also, it is possible to modify the HTML structure dynamically. <br />
-          For innerText sets only the visible text inside an element. Also, ignore hidden elements and extra whitespace. <br />
-          For textContent sets the full text inside an element, even if it's hidden.
-        </p>
-      </div>
-      <div class="bg-white rounded-xl mt-5">
-        <p class="font-semibold p-5">
-          Question-3: What is event delegation in the DOM?
-        </p>
-        <hr />
-        <p class="p-5">
-          A way you can an event listener once for multiple elements with support for adding extra children. its children using event.target
-        </p>
-      </div>
-      <div class="bg-white rounded-xl mt-5">
-        <p class="font-semibold p-5">
-          Question-4: What is event bubbling in the DOM?
-        </p>
-        <hr />
-        <p class="p-5">
-          Event bubbling is a term in the DOM where the event an element receives is bubbled transmitted to its parent and upward in the DOM tree, until it gets to the root.
-        </p>
-      </div>
-      <div class="bg-white rounded-xl mt-5">
-        <p class="font-semibold p-5">
-          Question-5: How do you create, add, and remove elements using
-          JavaScript?
-        </p>
-        <hr />
-        <p class="p-5">
-          These methods allow to create, add, and remove elements using in Javascript: <br/>
-          <br>
-          To create a new element for use, document.createElement("tagName") <br>
-          To add the element to the parent for use, parentElement.appendChild(newElement) <br/>
-          To remove an element for use, parentElement.removeChild(elementToRemove) or element.remove()
-        </p>
-      </div>
-    </section>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DevBoard</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="bg-slate-100 m-5 max-w-screen-xl mx-auto pt-5 pb-2 max-h-screen">
+  <nav class="bg-white h-20 rounded-2xl p-5 flex justify-between align-middle items-center">
+    <div class="flex gap-3 justify-center align-middle items-center">
+      <img class="w-8" src="images/logo.png" alt="logo" />
+      <p class="text-lg">Dev<b>Board</b></p>
+    </div>
+    <div class="flex gap-5 justify-center align-middle items-center">
+      <button style="color: #fff"
+        class="bg-[#6c5ce7] text-sm px-4 py-2 rounded-lg cursor-pointer transition-all duration-300"
+        onclick="location.href='index.html'">
+        Back To Desk
+      </button>
+    </div>
+  </nav>
+  <section>
+    <h1 class="text-2xl text-center font-bold m-5">Blogs</h1>
+    <div class="bg-white rounded-xl mt-5">
+      <p class="font-semibold p-5">
+        Question-1: What are the different ways to select an element in the
+        DOM?
+      </p>
+      <hr />
+      <p class="p-5">
+        There are various ways to select an element in the DOM, which are Id, Class name, Tag name, Name attribute, Css
+        selector, and Traversing the Dom.
+        <br /><br />
+        Here are various methods available for selecting elements: <br />
+        By Id using getElementById(), by class name using getElementsByClassName(), by tag name using
+        getElementsByTagName(), by name attribute using getElementsByName(), by css selector using querySelector() and
+        querySelectorAll(), and lastly traversing the DOM using properties like children, firstElementChild,
+        nextElementSibling.
+      </p>
+    </div>
+    <div class="bg-white rounded-xl mt-5">
+      <p class="font-semibold p-5">
+        Question-2: What is the difference between innerHTML, innerText, and
+        textContent ?
+      </p>
+      <hr />
+      <p class="p-5">
+        For innerHTML sets the HTML content inside an element, including tags. Also, it is possible to modify the HTML
+        structure dynamically. <br />
+        For innerText sets only the visible text inside an element. Also, ignore hidden elements and extra whitespace.
+        <br />
+        For textContent sets the full text inside an element, even if it's hidden.
+      </p>
+    </div>
+    <div class="bg-white rounded-xl mt-5">
+      <p class="font-semibold p-5">
+        Question-3: What is event delegation in the DOM?
+      </p>
+      <hr />
+      <p class="p-5">
+        A way you can an event listener once for multiple elements with support for adding extra children. its children
+        using event.target
+      </p>
+    </div>
+    <div class="bg-white rounded-xl mt-5">
+      <p class="font-semibold p-5">
+        Question-4: What is event bubbling in the DOM?
+      </p>
+      <hr />
+      <p class="p-5">
+        Event bubbling is a term in the DOM where the event an element receives is bubbled transmitted to its parent and
+        upward in the DOM tree, until it gets to the root.
+      </p>
+    </div>
+    <div class="bg-white rounded-xl mt-5">
+      <p class="font-semibold p-5">
+        Question-5: How do you create, add, and remove elements using
+        JavaScript?
+      </p>
+      <hr />
+      <p class="p-5">
+        These methods allow to create, add, and remove elements using in Javascript: <br />
+        <br>
+        To create a new element for use, document.createElement("tagName") <br>
+        To add the element to the parent for use, parentElement.appendChild(newElement) <br />
+        To remove an element for use, parentElement.removeChild(elementToRemove) or element.remove()
+      </p>
+    </div>
+  </section>
+</body>
+
 </html>
