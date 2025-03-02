@@ -34,13 +34,10 @@
         </p>
         <hr />
         <p class="p-5">
-          There are a several ways to select an element in the DOM:
+          There are various ways to select an element in the DOM, which are Id, Class name, Tag name, Name attribute, Css selector, and Traversing the Dom.
           <br /><br />
-          1. ID: document.getElementById("id"); <br />
-          2. Class Name: document.getElementByClassName("class"); <br />
-          3. Tag Name: document.getElementByTagName("tag"); <br />
-          4. Query: document.querySelector("query"); <br />
-          document.querySelectorAll("query");
+          Here are various methods available for selecting elements: <br />
+          By Id using getElementById(), by class name using getElementsByClassName(), by tag name using getElementsByTagName(), by name attribute using getElementsByName(), by css selector using querySelector() and querySelectorAll(), and lastly traversing the DOM using properties like children, firstElementChild, nextElementSibling.
         </p>
       </div>
       <div class="bg-white rounded-xl mt-5">
@@ -50,13 +47,9 @@
         </p>
         <hr />
         <p class="p-5">
-          InnerHTML: Gets or sets the HTML content within an element, including
-          HTML tags.<br />
-          InnerText: Gets or sets the visible text content of an element, as it
-          would appear on the rendered page. <br />
-          textContent: Gets or sets the text content of an element, including
-          all child nodes. It returns the raw text, regardless of styling or
-          visibility.
+          For innerHTML sets the HTML content inside an element, including tags. Also, it is possible to modify the HTML structure dynamically. <br />
+          For innerText sets only the visible text inside an element. Also, ignore hidden elements and extra whitespace. <br />
+          For textContent sets the full text inside an element, even if it's hidden.
         </p>
       </div>
       <div class="bg-white rounded-xl mt-5">
@@ -65,11 +58,7 @@
         </p>
         <hr />
         <p class="p-5">
-          Event delegation leverages event bubbling by attaching a single
-          listener to a parent element, which then handles events originating
-          from its children by checking the "event.target", improving
-          performance and simplifying event management, especially for
-          dynamically added elements.
+          A way you can an event listener once for multiple elements with support for adding extra children. its children using event.target
         </p>
       </div>
       <div class="bg-white rounded-xl mt-5">
@@ -78,11 +67,7 @@
         </p>
         <hr />
         <p class="p-5">
-          In the DOM, event bubbling describes the event's propagation from the
-          point where the event triggered itself, upwards through the element's
-          parent chain (or hierarchy). In short, when you click a nested element
-          that click event will also be detected by its parent, grandparent, etc
-          etc up the document root.
+          Event bubbling is a term in the DOM where the event an element receives is bubbled transmitted to its parent and upward in the DOM tree, until it gets to the root.
         </p>
       </div>
       <div class="bg-white rounded-xl mt-5">
@@ -92,11 +77,11 @@
         </p>
         <hr />
         <p class="p-5">
-          1. Creating Elements: document.createElement("tagName") <br />
-          2. Adding Elements: parentElement.appendChild(newElement) <br />
-          3. Removing Elements: parentElement.removeChild(elementToRemove)
-          <br />
-          element.remove()
+          These methods allow to create, add, and remove elements using in Javascript: <br/>
+          <br>
+          To create a new element for use, document.createElement("tagName") <br>
+          To add the element to the parent for use, parentElement.appendChild(newElement) <br/>
+          To remove an element for use, parentElement.removeChild(elementToRemove) or element.remove()
         </p>
       </div>
     </section>
